@@ -13,5 +13,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.app.App"
+    mainClass = "org.ferranferri.adventofcode2024.App"
 }
