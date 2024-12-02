@@ -6,8 +6,12 @@ package org.ferranferri.adventofcode2024;
 public class App {
 
     public static void main(String[] args) {
-        DayOneProblem dayOneProblem = new DayOneProblem("/day001/ex1/input.txt");
+        DayOneProblem dayOneProblem = new DayOneProblem("/inputs/input_day1.txt");
         System.out.println("Day 01 - Part01: " + dayOneProblem.solveProblemDayOnePartOne());
         System.out.println("Day 01 - Part02: " + dayOneProblem.solveProblemDayOnePartTwo());
+
+        DayTwoProblem dayTwoProblem = new DayTwoProblem("/inputs/input_day2.txt");
+        System.out.println("Day 02 - Part01: " + dayTwoProblem.solveProblemDayTwoPartOne());
+
     }
 }

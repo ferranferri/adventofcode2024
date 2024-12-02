@@ -1,8 +1,5 @@
 package org.ferranferri.adventofcode2024;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -11,21 +8,11 @@ import java.util.stream.Stream;
 
 import static java.lang.Math.abs;
 
-public class DayOneProblem {
-    private List<String> lines;
+public class DayOneProblem extends ProblemSolver {
+
 
     public DayOneProblem(String inputFile) {
-
-        // Load the file from resources using getClass().getResource()
-        String filePath = Objects.requireNonNull(App.class.getResource(inputFile)).getPath();
-        if (filePath != null) {
-
-            try {
-                lines = Files.readAllLines(Paths.get(filePath));
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
+        super(inputFile);
     }
 
     public int solveProblemDayOnePartOne() {
