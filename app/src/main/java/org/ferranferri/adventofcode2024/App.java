@@ -12,6 +12,7 @@ public class App {
 
         DayTwoProblem dayTwoProblem = new DayTwoProblem("/inputs/input_day2.txt");
         System.out.println("Day 02 - Part01: " + dayTwoProblem.solveProblemDayTwoPartOne());
+        System.out.println("Day 02 - Part02: " + dayTwoProblem.solveProblemDayTwoPartTwo());
 
     }
 }
