@@ -8,9 +8,18 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Objects;
+import java.util.logging.Logger;
+import java.util.stream.IntStream;
+
+import static java.lang.Math.abs;
 
 public class App {
+    private static final Logger logger = Logger.getLogger(App.class.getName());
     public static void main(String[] args) {
+        System.out.println("Day 01 - Part01: " + solveProblemDayOnePartOne());
+    }
+
+    public static int solveProblemDayOnePartOne() {
         final String FILE_PATH = "/day001/ex1/input.txt";
 
         // Load the file from resources using getClass().getResource()
@@ -21,18 +30,28 @@ public class App {
             try {
                 // Read all lines from the file into a List of Strings
                 List<String> lines = Files.readAllLines(Paths.get(filePath));
+                List<Integer> firstColumn = lines.stream()
+                        .map(line -> line.split(" {3}"))
+                        .map(parts -> Integer.parseInt(parts[0]))
+                        .sorted()
+                        .toList();
+                List<Integer> secondColumn = lines.stream()
+                        .map(line -> line.split(" {3}"))
+                        .map(parts -> Integer.parseInt(parts[1]))
+                        .sorted()
+                        .toList();
 
-                // Process the lines
-                for (String line : lines) {
-                    System.out.println(line);
-                }
+                return IntStream.range(0, firstColumn.size())
+                        .map(index -> abs(firstColumn.get(index) - secondColumn.get(index)))
+                        .sum();
+
 
             } catch (IOException | NullPointerException e) {
-                e.printStackTrace();
+                logger.warning("Something went wrong executing program");
             }
         } else {
             System.out.println("File not found in resources.");
         }
-
+        return 0;
     }
 }
