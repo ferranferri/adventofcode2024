@@ -6,22 +6,26 @@ package org.ferranferri.adventofcode2024;
 public class App {
 
     public static void main(String[] args) {
-        DayOneProblem dayOneProblem = new DayOneProblem("/inputs/input_day1.txt");
-        System.out.println("Day 01 - Part01: " + dayOneProblem.solveProblemDayOnePartOne());
-        System.out.println("Day 01 - Part02: " + dayOneProblem.solveProblemDayOnePartTwo());
 
-        DayTwoProblem dayTwoProblem = new DayTwoProblem("/inputs/input_day2.txt");
-        System.out.println("Day 02 - Part01: " + dayTwoProblem.solveProblemDayTwoPartOne());
-        System.out.println("Day 02 - Part02: " + dayTwoProblem.solveProblemDayTwoPartTwo());
+//        DayOneProblem dayOneProblem = new DayOneProblem("/inputs/input_day1.txt");
+//        System.out.println("Day 01 - Part01: " + dayOneProblem.solveProblemDayOnePartOne());
+//        System.out.println("Day 01 - Part02: " + dayOneProblem.solveProblemDayOnePartTwo());
+//
+//        DayTwoProblem dayTwoProblem = new DayTwoProblem("/inputs/input_day2.txt");
+//        System.out.println("Day 02 - Part01: " + dayTwoProblem.solveProblemDayTwoPartOne());
+//        System.out.println("Day 02 - Part02: " + dayTwoProblem.solveProblemDayTwoPartTwo());
+//
+//        DayThreeProblem dayThreeProblem = new DayThreeProblem("/inputs/input_day3.txt");
+//        System.out.println("Day 03 - Part One: " + dayThreeProblem.solveProblemDayThreePartOne());
+//        System.out.println("Day 03 - Part Two: " + dayThreeProblem.solveProblemDayThreePartTwo());
+//
+//        DayFourProblem dayFourProblem = new DayFourProblem("/inputs/input_day4.txt");
+//        System.out.println("Day 04 - Part One: " + dayFourProblem.solveProblemDayFourPartOne());
+//        System.out.println("Day 04 - Part Two: " + dayFourProblem.solveProblemDayFourPartTwo());
 
-        DayThreeProblem dayThreeProblem = new DayThreeProblem("/inputs/input_day3.txt");
-        System.out.println("Day 03 - Part One: " + dayThreeProblem.solveProblemDayThreePartOne());
-        System.out.println("Day 03 - Part Two: " + dayThreeProblem.solveProblemDayThreePartTwo());
-
-        DayFourProblem dayFourProblem = new DayFourProblem("/inputs/input_day4.txt");
-        System.out.println("Day 04 - Part One: " + dayFourProblem.solveProblemDayFourPartOne());
-        System.out.println("Day 04 - Part Two: " + dayFourProblem.solveProblemDayFourPartTwo());
-
+        DayFifthProblem dayFifthProblem = new DayFifthProblem("/inputs/input_day5.txt");
+        System.out.println("Day 05 - Part One: " + dayFifthProblem.solveProblemDayFifthPartOne());
+        System.out.println("Day 05 - Part Two: " + dayFifthProblem.solveProblemDayFifthPartTwo());
 
     }
 }
