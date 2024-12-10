@@ -27,5 +27,9 @@ public class App {
         System.out.println("Day 05 - Part One: " + dayFifthProblem.solveProblemDayFifthPartOne());
         System.out.println("Day 05 - Part Two: " + dayFifthProblem.solveProblemDayFifthPartTwo());
 
+        DaySixthProblem daySixthProblem = new DaySixthProblem("/inputs/input_day6.txt");
+        System.out.println("Day 06 - Part One: " + daySixthProblem.solveProblemDaySixthPartOne());
+        System.out.println("Day 06 - Part Two: " + daySixthProblem.solveProblemDaySixthPartTwo());
+
     }
 }
